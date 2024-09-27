@@ -66,3 +66,12 @@ img {
     height: auto;
     margin-bottom: 20px;
 }
+
+.dark, .dark select {
+    background-color: #333;
+    color: white;
+
+}
+.dark h2 {
+    color: #1197ef;
+}
