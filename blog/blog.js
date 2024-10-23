@@ -40,9 +40,7 @@ const articles = [
 const recentPosts = document.getElementById('recent-posts');
 const postDetails = document.getElementById('post-details');
 
-// Populate Recent Posts and Post Details
 articles.forEach(article => {
-    // Create HTML for the recent post (middle section)
     const post = document.createElement('article');
     post.classList.add('post');
     post.innerHTML = `
@@ -52,12 +50,10 @@ articles.forEach(article => {
         
     `;
     recentPosts.appendChild(post);
-
-    // Create HTML for post details (left sidebar)
     const detailItem = document.createElement('li');
     detailItem.innerHTML = `
-        <h4>${article.title}</h4>
         <p id="date"> ${article.date}</p>
+        <p> ${article.ages}<p>
         <p>${article.genre}</p>
         <p>${article.stars}</p>
     `;
